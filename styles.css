@@ -1,0 +1,157 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue-main: hsl(217, 54%, 11%);
+  --very-dark-blue-card: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: white;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Outfit';
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-size: 62.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: var(--very-dark-blue-main);
+}
+
+.main {
+  width: 290px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.main .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--very-dark-blue-card);
+  border-radius: 15px;
+}
+
+.main .card-photo {
+  height: 250px;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.main .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 250px;
+}
+
+.main .card-body-title {
+  color: var(--white);
+  margin: 1.5rem 0 1rem;
+}
+
+.main .card-body-text {
+  margin-top: 0;
+  font-size: 15.3px;
+  font-weight: 300;
+  color: var(--soft-blue);
+  margin-bottom: 10px;
+}
+
+.main .card-body-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid var(--very-dark-blue-line);
+  padding-bottom: 4px;
+}
+
+.main .card-body-footer-balance {
+  color: var(--cyan);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .card-body-footer-balance-icon {
+  margin-right: 5px;
+}
+
+.main .card-body-footer-days {
+  color: var(--soft-blue);
+  font-weight: 400;
+}
+
+.main .card-footer {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px 0 20px;
+}
+
+.main .card-footer-photo {
+  height: 25px;
+  width: 25px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.main .card-footer-text {
+  margin-left: 15px;
+  color: var(--soft-blue);
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.main .card-footer-text span {
+  color: var(--white);
+}
+/*# sourceMappingURL=styles.css.map */
